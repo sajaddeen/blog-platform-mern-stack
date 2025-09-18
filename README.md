@@ -1,69 +1,38 @@
-Project Overview
-I've completed the full-stack blog platform. The project demonstrates a strong understanding of both frontend and backend development, with all the core features working end-to-end. I've focused on creating a clean, modular architecture that is both maintainable and scalable.
+# Blog Platform - MERN Stack
 
-Core Features
-User Authentication: I've implemented a secure, JWT-based authentication system for registration, login, and protected routes.
+A modern full-stack blog platform built with NestJS and Next.js, demonstrating solid full-stack development skills with user authentication, content management, and interactive features.
 
-Blog Management: All CRUD operations for blog posts—creating, reading, updating, and deleting—are fully functional. I also added a draft/published workflow to manage content states.
+## 🚀 Core Features
+- User Authentication: Secure registration and login using JWT.
+- Blog Management: Complete CRUD operations to create, edit, delete, and publish blog posts.
+- User Interactions: Users can like posts and add comments with a nested reply system.
+- User Profiles: Author profiles with a bio and a list of all their posts.
+- Search & Filter: Full-text search on blog post titles and content.
+- File Uploads: A dedicated API endpoint for handling image uploads.
 
-User Interactions: Users can like posts and add comments, which are stored in a threaded format to allow for replies.
+## 🛠️ Technologies Used
+### Backend (NestJS + TypeScript)
+- Framework: NestJS
+- Database: MongoDB (Mongoose)
+- Authentication: Passport.js, JWT
+- Validation: Class-validator
+- API Docs: Swagger
 
-User Profiles: I've created public profile pages that display a user's bio and a list of all their posts.
+### Frontend (Next.js + TypeScript)
+- Framework: Next.js (App Router)
+- State Management: Zustand
+- UI Library: Tailwind CSS, Shadcn UI
+- API Client: Axios
+- Rich Text Editor: React Quill
 
-Search & Filter: The platform includes a full-text search feature for finding posts by title or content.
+## 💻 Setup Instructions
+Follow these steps to get the project up and running on your local machine.
 
-File Uploads: I've built a dedicated API for handling image uploads.
+### Prerequisites
+- Node.js (v18 or higher)
+- MongoDB instance (local or cloud)
 
-Technologies Used
-Backend: The backend is built with NestJS, using MongoDB with Mongoose. I used Passport.js and JWT for authentication, and Swagger for API documentation.
-
-Frontend: The frontend is a Next.js application. I managed global state with Zustand and styled the UI using Tailwind CSS and Shadcn UI. React Quill was used as the rich text editor.
-
-Setup Instructions
-To run the project on your machine, follow these steps.
-
-Prerequisites:
-
-Node.js (v18 or higher)
-
-MongoDB instance (local or cloud)
-
-1. Clone the Repository
-
-Bash
-
-git clone https://github.com/ahamedsajad/blog-platform-mern-stack.git
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/ahamedsajad/blog-platform-mern-stack.git](https://github.com/ahamedsajad/blog-platform-mern-stack.git)
 cd blog-platform-mern-stack
-2. Backend Setup
-
-Navigate to the backend directory: cd backend
-
-Install dependencies: npm install
-
-Create a .env file with your database URI and JWT secret.
-
-Run the server: npm run start:dev
-
-3. Frontend Setup
-
-Open a new terminal and navigate to the frontend directory: cd frontend
-
-Install dependencies: npm install
-
-Run the development server: npm run dev
-
-The backend will run on http://localhost:3000, and the frontend on http://localhost:3001.
-
-Technical Decisions
-I chose NestJS for its modularity and built-in support for a clean architecture, which made building a structured API straightforward. For the frontend, Next.js was the best choice for its performance benefits from server-side rendering and its file-based routing. I used Zustand for state management because of its simplicity and efficiency.
-
-Test Results
-I performed end-to-end tests to confirm all features are working.
-
-User Authentication: Registration, login, and protected routes passed testing.
-
-Blog Management: I successfully created, viewed, updated, and deleted posts. The ownership check on the backend works correctly.
-
-User Interactions: I confirmed that I could like a post and add new comments.
-
-Search & Profiles: The search bar correctly filters posts, and clicking a username successfully navigates to the user's profile.
